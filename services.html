@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Hunter</title>
+    <style>
+        /* Your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            max-height: 100px; /* Adjust the height as needed */
+        }
+
+        h1 {
+             
+            margin:auto;/* Center the h1 element */
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        nav a:hover {
+            background-color: #666;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .main-content {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .login-btn, .signup-btn {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .login-btn:hover, .signup-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="C:\Users\MOHD FURQUAN QURESHI\Pictures\Screenshots\Code hunter.png" alt="Logo" class="logo" onclick="goToHomePage()">
+        <h1>Code Hunter</h1>
+        
+    </header>
+
+    <div class="container" id="about">
+        <div class="main-content">
+            <h2>Welcome to Code Hunter</h2>
+            <div class="container">
+        <div class="main-content">
+            <h2>Our Services</h2>
+            <p>Here are the services we offer:</p>
+            <ul>
+                <li>Python Programming Tutorials</li>
+                <li>Project-Based Learning Resources</li>
+                <li>Live Coding Sessions</li>
+                <li>Customized Coding Courses</li>
+                <li>One-on-One Mentoring</li>
+            </ul>
+            <p>Contact us to learn more about our services and how we can help you achieve your coding goals!</p>
+        </div>
+
+        </div>
+
+        <!-- Add login and signup buttons -->
+        <div style="text-align: center; margin-top: 20px;">
+            <p>For Login or Sign Up Click The Button Below</p>
+            <button class="login-btn" onclick="redirectToLoginPage()">Login & Sign Up</button>
+        </div>
+    </div>
+    <script>
+        function redirectToLoginPage() {
+            window.location.href = 'file:///C:/Users/MOHD%20FURQUAN%20QURESHI/Documents/adnan%20important%20folder/nightcoder.html'; // Replace 'your_login_page_url_here' with the actual URL of your login page
+        }
+        function goToHomePage() {
+        // Replace '#' with the link to your home page
+        window.location.href = 'file:///C:/Users/MOHD%20FURQUAN%20QURESHI/Documents/adnan%20important%20folder/home1.html';
+    }
+    </script>
+
+   
+</body>
+
+</html>

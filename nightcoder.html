@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Python Lectures</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #2c3e50; /* Changing background color to a coding website color */
+            font-family: Times New Roman, sans-serif;
+        }
+
+        .warning {
+            font-size: 48px;
+            color: red;
+            text-align: center;
+            
+            margin-top: 50px;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .scrolling-text {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 20px;
+            animation: scroll 10s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 50px;
+            text-align: center;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 1400px;
+
+            
+        }
+
+        .form-container {
+            text-align: center;
+            margin-top: 20px; /* Adjust top margin as needed */
+        }
+
+        .form-container form {
+            margin: 10px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            margin: 0 auto; /* Center the form */
+        }
+
+        .form-container form h3 {
+            margin-bottom: 20px;
+        }
+
+        .form-container form input[type="text"],
+        .form-container form input[type="password"],
+        .form-container form input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-container form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-container form button:hover {
+            background-color: #45a049;
+        }
+
+        .python-videos {
+            text-align: left;
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%; /* Adjust width as needed */
+            height: 100%; /* Adjust height as needed */
+            background-color: black;
+            padding: 20px;
+            z-index: 999;
+            overflow-y: auto;
+        }
+        
+
+        .python-videos a {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .python-videos a:hover {
+            color: #000;
+            font-weight: bold;
+        }
+        .logo{
+            max-height: 90px;
+        }
+        h1{
+            margin:auto;
+            top: 5px;
+            left: 3px;
+        }
+
+        img.logo {
+            position: absolute;
+            top: 5px; /* Adjust as needed */
+            left: 3px; /* Adjust as needed */
+            max-height: 100px;
+            width: auto; /* Maintain aspect ratio */
+            cursor: pointer; /* Add cursor pointer */
+        }
+        .logo1 {
+            position: absolute;
+            top: 10px; /* Adjust as needed */
+            right: 40; /* Adjust as needed */
+            height: 100px; /* Adjust the height of the logo */
+            width: auto; /* Maintain aspect ratio */
+            cursor: pointer; /* Add cursor pointer */
+        }
+       
+    </style>
+</head>
+<body>
+<div class="warning">CODE HUNTER</div>
+<div class="scrolling-text">Welcome to Our Coding Website!</div>
+
+<img class="logo" src="C:\Users\MOHD FURQUAN QURESHI\Pictures\Screenshots\Code hunter.png" alt="Code Hunter Logo" onclick="goToHomePage()">
+
+
+<div class="form-container" id="loginForm">
+    <form>
+        <h3>Login</h3>
+
+        <input type="text" placeholder="Username" required><br><br>
+        <input type="password" placeholder="Password" required><br><br>
+        
+        <button type="button" onclick="showPlaylist()">Login</button><br><br>
+        <button type="button" onclick="showRegistrationForm()">Register</button>
+    </form>
+</div>
+
+<div class="form-container" id="registerForm" style="display: none;">
+    <form>
+        <h3>Register</h3>
+        <input type="text" placeholder="Username" required><br><br>
+        <input type="email" placeholder="Email" required><br><br>
+        <input type="password" placeholder="Password" required><br><br>
+        <button type="button" onclick="showPlaylist()">Register</button><br><br>
+    </form>
+</div>
+
+<div class="python-videos" id="pythonVideos">
+
+    <img class="logo1"  src="C:\Users\MOHD FURQUAN QURESHI\Pictures\Screenshots\Code hunter.png"  onclick="goToHomePage()">
+     <img   src="C:\Users\MOHD FURQUAN QURESHI\Downloads\ni1.jpg" width="1480" height="400">
+    
+    <p align="center" style="color:red;"> click the Playlist for more videos on Youtube</p>s
+    <iframe id="videoFrame" width="1200" height="600" src="" frameborder="0" align="right" ></iframe><br>
+    
+    <h3 style="color:ghostwhite;">Python Lecture Videos</h3>
+    <ol>
+        <li><a style="color:lightgoldenrodyellow;"onclick="changeVideo('video1')" href="#">First Program</a></li>
+        <li><a style="color:lightgoldenrodyellow;"onclick="changeVideo('video2')" href="#">Adding Two Numbers</a></li>
+        <li><a style="color:lightgoldenrodyellow;"onclick="changeVideo('video3')" href="#">Python Datatypes, Variable, Operator</a></li>
+        <li><a style="color:lightgoldenrodyellow;"onclick="changeVideo('video4')" href="#">If-Else Statements</a></li>
+        <li><a style="color:lightgoldenrodyellow;"onclick="changeVideo('video4')" href="#">If-Else Part 2</a></li>
+        <li><a style="color:lightgoldenrodyellow;"onclick="changeVideo('video4')" href="#">For-While Loop + Questions</a></li>
+        <li><a style="color:lightgoldenrodyellow;"onclick="changeVideo('video4')" href="#">For-While Loop Part 2</a></li>
+        <li><a style="color:lightgoldenrodyellow;"onclick="changeVideo('video4')" href="#">Pattern Problem</a></li>
+        <li><a style="color:lightgoldenrodyellow;"onclick="changeVideo('video4')" href="#">While Loop</a></li>
+        <li><a style="color:lightgoldenrodyellow;"onclick="changeVideo('video4')" href="#">While Loop Part-2</a></li>
+        <li><a style="color:lightgoldenrodyellow;"onclick="changeVideo('video4')" href="#">String</a></li>
+        <li><a style="color:lightgoldenrodyellow;"onclick="changeVideo('video4')" href="#">Count the Number of Vowels</a></li>
+        <li><a style="color:lightgoldenrodyellow;"onclick="changeVideo('video4')" href="#">Reverse a String word by word</a></li>
+        <li><a style="color:lightgoldenrodyellow;"onclick="changeVideo('video4')" href="#">Replace a character in a String</a></li>
+        <li><a style="color:lightgoldenrodyellow;"onclick="changeVideo('video4')" href="#">Delete a character from a String</a></li>
+        <li><a style="color:lightgoldenrodyellow;"onclick="changeVideo('video4')" href="#">Check Two Strings are Anagram or Not </a></li>
+        <li><a style="color:lightgoldenrodyellow;"onclick="changeVideo('video4')" href="#">List</a></li>
+        <li><a style="color:lightgoldenrodyellow;"onclick="changeVideo('video4')" href="#">List(Questions-1)</a></li>
+        <li><a style="color:lightgoldenrodyellow;"onclick="changeVideo('video4')" href="#">List(Questions-2)</a></li>
+        <li><a style="color:lightgoldenrodyellow;"onclick="changeVideo('video4')" href="#">Bubble Sort</a></li>
+        <li><a style="color:lightgoldenrodyellow;"onclick="changeVideo('video4')" href="#">Bubble Sort</a></li>
+        <li><a style="color:lightgoldenrodyellow;"onclick="changeVideo('video4')" href="#">Bubble Sort</a></li>
+        <li><a style="color:lightgoldenrodyellow;"onclick="changeVideo('video4')" href="#">Bubble Sort</a></li>
+    </ol>
+
+</div>
+
+<script>
+    function changeVideo(videoId) {
+      var videoUrl;
+      // Set the URL based on the videoId
+      switch (videoId) {
+        case 'video1':
+          videoUrl = 'https://www.youtube.com/embed/6vAq2sEMeLY';
+          break;
+        case 'video2':
+          videoUrl = 'https://www.youtube.com/embed/NO41i0BSfow';
+          break;
+        case 'video3':
+          videoUrl = 'https://www.youtube.com/embed/AgkUWXELcs0';
+          break;
+        case 'video4':
+          videoUrl = 'https://www.youtube.com/embed/L8JrtQYFq_o?si=vn8d1b2MbGmSHC-N';
+          break;
+        case 'video5':
+          videoUrl = 'https://www.youtube.com/embed/TM65zSRpeoM?si=mVr4kjPIfZIkeQGu';
+          break;
+        case 'video6':
+          videoUrl = 'https://www.youtube.com/embed/AgkUWXELcs0';
+          break;
+        case 'video7':
+          videoUrl = 'https://www.youtube.com/embed/AgkUWXELcs0';
+          break;
+        case 'video8':
+          videoUrl = 'https://www.youtube.com/embed/AgkUWXELcs0';
+          break;
+        case 'video9':
+          videoUrl = 'https://www.youtube.com/embed/AgkUWXELcs0';
+          break;
+        case 'video10':
+          videoUrl = 'https://www.youtube.com/embed/AgkUWXELcs0';
+          break;
+        case 'video11':
+          videoUrl = 'https://www.youtube.com/embed/AgkUWXELcs0';
+          break;
+        case 'video12':
+          videoUrl = 'https://www.youtube.com/embed/AgkUWXELcs0';
+          break;
+        case 'video13':
+          videoUrl = 'https://www.youtube.com/embed/AgkUWXELcs0';
+          break;
+        default:
+          // Default to some video
+          videoUrl = 'https://youtu.be/L8JrtQYFq_o';
+          break;
+      }
+      // Change the src attribute of the iframe to play the selected video
+      document.getElementById('videoFrame').src = videoUrl;
+    }
+    function showRegistrationForm() {
+        document.getElementById('loginForm').style.display = 'none';
+        document.getElementById('registerForm').style.display = 'block';
+    }
+    function showLoginForm() {
+        document.getElementById('loginForm').style.display = 'none';
+        document.getElementById('registerForm').style.display = 'block';
+    }
+
+    function showPlaylist() {
+        document.getElementById('loginForm').style.display = 'none';
+        document.getElementById('pythonVideos').style.display = 'block';
+    }
+
+    function goToHomePage() {
+        // Replace '#' with the link to your home page
+        window.location.href = 'file:///C:/Users/MOHD%20FURQUAN%20QURESHI/Documents/adnan%20important%20folder/home1.html';
+    }
+</script>
+
+</body>
+</html>

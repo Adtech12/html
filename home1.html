@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Hunter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            max-height: 100px; /* Adjust the height as needed */
+        }
+
+        h1 {
+             
+            margin: auto;/* Center the h1 element */
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        nav a:hover {
+            background-color: #666;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .main-content {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .login-btn, .signup-btn {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .login-btn:hover, .signup-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="C:\Users\MOHD FURQUAN QURESHI\Pictures\Screenshots\Code hunter.png" alt="Logo" class="logo" onclick="goToHomePage()">
+        <h1>Code Hunter</h1>
+        <nav>
+        <a href="file:///C:/Users/MOHD%20FURQUAN%20QURESHI/Documents/adnan%20important%20folder/home1.html">Home</a>
+        <a href="file:///C:/Users/MOHD%20FURQUAN%20QURESHI/Documents/adnan%20important%20folder/compilr.html">About</a>
+        <a href="file:///C:/Users/MOHD%20FURQUAN%20QURESHI/Documents/adnan%20important%20folder/services.html">Services</a>
+        <a href="file:///C:/Users/MOHD%20FURQUAN%20QURESHI/Documents/adnan%20important%20folder/contact.html#">Contact</a>
+    </nav>
+    </header>
+
+   
+
+    <div class="container">
+        <div class="main-content">
+            <h2>Welcome to Code Hunter</h2>
+            <p>This is the homepage for Code Hunter, your go-to destination for all things coding and programming!</p>
+            <p>Explore our services, learn about our team, and get in touch with us to start your coding journey.</p>
+            
+            <h3>1) Print First N Natural Numbers</h3>
+            <p>Here's a Python code to print the first N natural numbers:</p>
+            
+            <pre><code>
+def print_natural_numbers(n):
+    for i in range(1, n + 1):
+        print(i, end=" ")
+
+# Example usage:
+n = 10
+print("First", n, "natural numbers:")
+print_natural_numbers(n)
+            </code></pre>
+            
+            <h3>2) Print Table of Desired Choice</h3>
+            <p>Here's a Python code to print the table of a desired choice:</p>
+            
+            <pre><code>
+def print_table(number, limit):
+    for i in range(1, limit + 1):
+        print(number, "x", i, "=", number * i)
+
+# Example usage:
+number = 5
+limit = 10
+print("Table of", number, "up to", limit, ":")
+print_table(number, limit)
+            </code></pre>
+            
+            <h3>3) Print Sum of Even Numbers</h3>
+            <p>Here's a Python code to print the sum of even numbers:</p>
+            
+            <pre><code>
+def sum_even_numbers(n):
+    sum = 0
+    for i in range(2, n + 1, 2):
+        sum += i
+    return sum
+
+# Example usage:
+n = 10
+print("Sum of even numbers up to", n, ":", sum_even_numbers(n))
+            </code></pre>
+            
+            <h3>4) Print Sum of Digits of Number</h3>
+            <p>Here's a Python code to print the sum of digits of a number:</p>
+            
+            <pre><code>
+def sum_of_digits(number):
+    sum = 0
+    while number > 0:
+        digit = number % 10
+        sum += digit
+        number //= 10
+    return sum
+
+# Example usage:
+number = 12345
+print("Sum of digits of", number, ":", sum_of_digits(number))
+            </code></pre>
+            
+            <h3>5) Check Whether a Number is Odd or Even</h3>
+            <p>Here's a Python code to check whether a number is odd or even:</p>
+            
+            <pre><code>
+def check_odd_even(number):
+    if number % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+# Example usage:
+number = 10
+print(number, "is", check_odd_even(number))
+            </code></pre>
+            
+            <!-- Paste YouTube video embed code here -->
+            <h3>Learn More:</h3>
+            <p>Watch this video to understand Python programming concepts:</p>
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/9N7NwVr7g3Y?si=QjnmPse1ACi3jUj2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <!-- Add login and signup buttons -->
+        <div style="text-align: center; margin-top: 20px;">
+            <p>For Login or Sign Up Click The Button Below</p>
+            <button class="login-btn" onclick="redirectToLoginPage()">Login & Sign Up</button>
+            
+        </div>
+    </div>
+
+    <footer>
+        <p>Like us on <a href="https://www.facebook.com/profile.php?id=100090936284360">Facebook</a> | Share on <a href="https://twitter.com/adtech16823123">Twitter</a> | Subscribe to our YouTube Channel<a href="https://www.youtube.com/channel/UC6y68J_-oc_4pwNeuvHQXGA">YouTube</p>
+    </footer>
+
+    <script>
+        function redirectToLoginPage() {
+            window.location.href = 'file:///C:/Users/MOHD%20FURQUAN%20QURESHI/Documents/adnan%20important%20folder/nightcoder.html'; // Replace 'your_login_page_url_here' with the actual URL of your login page
+        }
+        function goToHomePage() {
+        // Replace '#' with the link to your home page
+        window.location.href = 'file:///C:/Users/MOHD%20FURQUAN%20QURESHI/Documents/adnan%20important%20folder/home1.html';
+    }
+    </script>
+</body>
+
+</html>
